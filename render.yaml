@@ -1,0 +1,14 @@
+services:
+  - type: worker
+    name: trading-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "./start.sh"
+    plan: free
+    envVars:
+      - key: BINANCE_API_KEY
+        value: your_api_key_here
+      - key: BINANCE_API_SECRET
+        value: your_api_secret_here
+      - key: TELEGRAM_TOKEN
+        value: your_bot_token_here
