@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+ta
+python-binance
+python-telegram-bot
+ccxt
+requests
+time
+datetime
+threading
